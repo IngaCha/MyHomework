@@ -1,5 +1,12 @@
 package lt.jundzilo.matrix;
 
+/**
+ * Program that draws various matrixes
+ * 
+ * @author Inga Chamentauskiene
+ *
+ */
+
 public class SimpleMatrix {
 
 	public static void main(String[] args) {
@@ -17,7 +24,6 @@ public class SimpleMatrix {
 		for (int i = 0; i < 9; i++) {
 			System.out.println();
 			for (int j = 1; j < 11; j++) {
-
 				System.out.print(j + i + " ");
 
 			}
