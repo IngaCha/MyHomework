@@ -9,14 +9,13 @@ public class WeekDay {
 
 	public static void main(String[] args) {
 
-		String reportDate = "1988-09-30";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		try {
-			Date d = sdf.parse(reportDate);
-			Calendar cal = Calendar.getInstance();
-			cal.setTime(d);
-			System.out.println(new SimpleDateFormat("E").format(new SimpleDateFormat("yyyy-MM-dd").parse(reportDate)));
+		String my_date = "1988-09-30";
+		SimpleDateFormat my_format = new SimpleDateFormat("yyyy-MM-dd"); // pattern
 
+		try {
+			Date d = my_format.parse(my_date);// make my string into date
+			System.out.println(d); // prints all date info
+			System.out.println(new SimpleDateFormat("E").format(d)); // print only weekday
 		} catch (ParseException e) {
 			System.out.println("Bad date format");
 
